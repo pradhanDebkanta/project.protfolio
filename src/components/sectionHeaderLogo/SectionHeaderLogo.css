@@ -1,0 +1,48 @@
+:root{
+    --text-color: #374b5c;
+}
+.nature-logo1,
+.nature-heading{
+    display: flex;
+    justify-content: center
+}
+
+.nature-logo1>img {
+    height: 2.5rem;
+    width: auto;
+}
+
+.nature-heading{
+    width: auto;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--text-color);
+}
+
+.nature-para{
+    padding: 0 1rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    color:  var(--text-color);
+}
+
+@media screen and (max-width: 480px){
+    .nature-heading{
+        font-size: 1.5rem;
+        padding: 0.7rem 0;
+    }
+    .nature-para{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .nature-heading{
+        font-size: 1.4rem;
+    }
+    .nature-para{
+        font-size: .9rem;
+
+    }
+}

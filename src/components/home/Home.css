@@ -1,0 +1,180 @@
+:root{
+    --aqua-blue: #00dbd0;
+    --text-color: #374b5c;
+
+}
+section {
+    height: 100%vh;
+}
+.row{
+    margin-top: 1rem;
+    padding: 4rem 0.5rem;
+}
+
+.healthy-life-with {
+    width: auto;
+    height: 3rem;
+    margin: 2rem 0 0 0;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--text-color);
+  }
+
+  .nature-organic {
+    height: auto;
+    width: auto;
+    padding: 0 0.5rem 1rem 0;
+    font-size: 2.7rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    color: #374b5c;
+  }
+.home-paragraph{
+    height: auto;
+    width: auto;
+    padding: 0 1rem 0 0;
+    font-size: 1.25rem;
+    line-height: 1.35;
+    text-align: left;
+    color: var(--text-color);
+  }
+
+  .btn {
+    margin-top: 1rem;
+    padding: 0.875rem 3rem;
+    border-radius: 10px;
+    background-color: var(--aqua-blue);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: #ffff;
+  }
+
+  .btn:hover,
+  .btn:visited {
+      background-color: transparent;
+      border: 2px solid var(--aqua-blue);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+  }
+
+  .btn:hover a{
+      color: var(--text-color);
+  }
+
+  .btn-text,
+  .btn-text:visited{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .btn-text:hover,
+  .btn-text:active{
+      text-decoration: none;
+      /* color: var(--text-color); */
+  }
+
+  .rounded{
+    margin-top: 2rem;
+    padding: 2.2rem;
+    border: 2px solid var(--aqua-blue); 
+    filter: brightness(100%);
+}
+.rounded:hover{
+    filter: brightness(95%);
+}
+.img-container::after{
+    content: url(../../asset/Group_195_200x350.png);
+    position: absolute;
+    bottom: 0rem;
+    left: 1.0rem;
+    height: 95%;
+    opacity: 1;
+    z-index: 999;
+}
+
+  @media screen and (max-width: 992px) and (min-width: 769px){
+    .healthy-life-with {
+        font-size: 1.7rem;
+    }
+    .nature-organic{
+        font-size: 2.5rem;
+    }
+    .home-paragraph{
+        font-size: 1rem;
+    }
+
+    .btn{
+        padding: 0.6rem 2.7rem;
+
+    }
+    .img-container::after{
+        content: url(../../asset/Group_195_150x250.png);
+        position: absolute;
+        bottom: 0rem;
+        left: -2.5rem;
+        height: 95%;
+    }
+      
+  }
+  @media screen and (max-width: 768px){
+      .img-container{
+          padding-top: 4.2rem;
+      }
+      .img-container::after{
+        content: url(../../asset/Group_195_200x350.png);
+        position: absolute;
+        bottom: 0rem;
+        left: -2.5rem;
+        height: 70%;
+    }
+
+  }
+
+  @media screen and (max-width: 480px) {
+    .healthy-life-with {
+        font-size: 1.5rem;
+    }
+    .nature-organic{
+        font-size: 2.3rem;
+    }
+    .home-paragraph{
+        font-size: .9rem;
+    }
+    .btn{
+        padding: 0.6rem 2.5rem;
+
+    }
+    .img-container::after{
+        content: url(../../asset/Group_195_150x250.png);
+        position: absolute;
+        bottom: 0rem;
+        left: 0.5rem;
+        height: 70%;
+    }
+      
+  }
+
+  @media screen and (max-width: 350px) {
+    .healthy-life-with {
+        font-size: 1.4rem;
+    }
+    .nature-organic{
+        font-size: 2rem;
+    }
+    .home-paragraph{
+        font-size: .9rem;
+    }
+    .btn{
+        padding: 0.6rem 2rem;
+
+    }
+      
+  }
+
+  

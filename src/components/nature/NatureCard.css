@@ -1,0 +1,55 @@
+:root{
+    --text-color: #374b5c;
+    --aqua-blue: #00dbd0;
+}
+
+.card{
+    padding: 1rem 0.5rem;
+    justify-content: center !important;
+    text-align: center !important;
+    border: 2px dashed var(--aqua-blue);
+    border-radius: 10px;
+}
+
+.icon .fa-lemon{
+    font-size: 2rem !important;
+    padding: 1rem;
+}
+
+.icon .fas{
+    color: var(--aqua-blue);
+}
+.icon .far{
+    color: #fff;
+}
+
+.card-heading-light,
+.card-heading-dark{
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0.5rem;
+}
+.card-para-light,
+.card-para-dark{
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.card-heading-dark,
+.card-para-dark{
+    color: var(--text-color) !important;
+}
+.card-heading-light,
+.card-para-light{
+    color: #ffff !important;
+
+}
+.card-blue{
+    background-color: var(--aqua-blue);
+    transition: all 0.5s linear;
+}
+.card-light{
+    background-color: #ffff;
+    transition: all 0.5s linear;
+
+}  

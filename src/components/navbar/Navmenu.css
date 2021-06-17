@@ -1,0 +1,174 @@
+.nav-brand-logo{
+    height: 3rem;
+    width: auto;
+}
+.brand-text{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    padding-top: 6px;
+    padding-left: 0.5rem;
+    color: #374b5c;
+}
+
+.navbar-nav {
+    margin-right:-2.5% ;
+}
+
+.nav-link{
+    position: relative;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    height: 100%;
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    color: #374b5c;
+    opacity: 0.75;
+}
+.nav-link:hover,
+.nav-link:active {
+    color: #2d3f4e;
+    opacity: 1;
+}
+
+.contact-btn{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    border: solid 2px #00dbd0;
+    border-radius: 8px;
+}
+.contact-btn:hover::before{
+    display: none;
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #00dbd0;
+    opacity: 0;
+    transition: all 500ms ease;
+}
+.nav-link:hover::before{
+    width: 100%;
+    opacity: 1;
+    transition: all 500ms ease;
+
+}
+
+.menu-icon{
+    position: absolute;
+    top: 1rem;
+    right: 1%;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: solid 2px #f3f7f6;
+    border-radius: 5px;
+    display: none;
+}
+
+
+.menu-icon:hover,
+.menu-icon:active {
+border: solid 2px #00dbd0;
+border-radius: 5px;
+}
+
+.fa-bars,
+.fa-times {
+    font-size: 1.5rem !important;
+    opacity: 0.8;
+    color:#2d3f4e ;
+}
+
+.fa-bars:hover,
+.fa-times:hover {
+    font-size: 1.5rem !important;
+    opacity: 1;
+    color:#2d3f4e ;
+}
+
+@media screen and (max-width: 992px) {
+    .menu-icon {
+        display: block;
+        transition: 200ms;
+    }
+
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 15.2rem;
+        position: absolute;
+        top: 4.75rem;
+        right: 10%;
+        left: 10%;
+        justify-content: center;
+        background-color: #CAF7E3;
+        opacity: 1;
+        z-index: 9;
+        transition: all 0.5s ease;
+    }
+    .nav-link{
+        text-align:left;
+        margin-left: 19% !important;
+        margin-right: 60% !important;
+    }
+    .contact-btn {
+        text-align: center;
+        margin-left: 3rem !important;
+        margin-top: 0.5rem;
+        padding-top: 0.65rem;
+    }
+    .nav-link::before{
+        display: none;
+    }
+    .nav-item:hover{
+        margin-left: 1% !important;
+        transition: all 0.3s ease;
+    }
+    .nav-item:last-child:hover{
+        margin-left: 0% !important;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .nav-brand-logo{
+        height: 2.5rem;
+        width: 28%;
+    }
+    .brand-text{
+        font-size: 1.19rem;
+    }
+    .menu-icon{
+        display: block;
+        top: 0.6rem;
+        right: 0%;
+        padding: 0.4rem 0.6rem;
+        transition: 0.3s ease;
+    }
+
+    .nav-link{
+        text-align:left;
+        margin-left: 19% !important;
+        margin-right: 40% !important;
+    }
+    .contact-btn {
+        text-align: center;
+        margin-left: 2.5rem !important;
+        margin-top: 0.5rem;
+
+
+
+    }
+}

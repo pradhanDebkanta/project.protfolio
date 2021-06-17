@@ -1,0 +1,51 @@
+:root{
+    --aqua-blue: #00dbd0;
+    --text-color: #374b5c;
+
+}
+
+.news-letter{
+    margin: 4rem auto;
+    padding: 2rem auto;
+}
+
+.form-control{
+    margin-top: 1.2rem;
+}
+
+.btn{
+    margin-top: 0.8rem;
+    padding: 0.875rem 3rem;
+    border-radius: 10px;
+    background-color: var(--aqua-blue);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: #ffff;
+}
+
+.btn:hover,
+  .btn:visited {
+      background-color: transparent;
+      border: 2px solid var(--aqua-blue);
+      color: var(--text-color);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+  }
+
+  @media screen and (max-width: 576px){
+      .btn{
+          margin-left:1rem;
+      }
+      .form-control{
+          margin-right: 1rem;
+      }
+  }
+
+  @media screen and (max-width: 487px){
+      .nature-heading{
+          text-align: center;
+      }
+      .form-inline{
+          justify-content: center;
+      }
+  }
